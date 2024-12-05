@@ -1,0 +1,87 @@
+/* general styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #bfe9f5;
+    margin: 0;
+    padding: 150px;
+}
+.Resume-Container {
+    display: flex;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto; 
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap; /* Ensure proper wrapping on smaller screens */
+}
+/* Left Section Styling */
+.left-section {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 100%; /* Default width for smaller screens */
+    text-align: center; /* Center all content */
+}
+.profile-picture {
+    width: 150px; /* Fixed width */
+    height: 180px; /* Fixed height */
+    margin: 20px auto; /* Center the picture vertically and horizontally */
+    border-radius: 50%; /* Make it circular */
+    border: 5px solid #33c9f2; /* Highlight the picture with a border */
+    display: block;
+    object-fit: cover; /* Maintain aspect ratio */
+}
+/* Right Section Styling */
+.Right-Section {
+    padding: 20px;
+    width: 100%; /* Default width for smaller screens */
+}
+/* Headings and Other Styles */
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+h3 {
+    font-size: 18px;
+    padding: 2%;
+    margin: 20px 0 10px;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #33c9f2;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+ul {
+    list-style-type: none; /* Removed invalid 'fill round' */
+    padding: 10px;
+    margin: 10px 0;
+}
+ul li {
+    margin: 5px 0;
+}
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+}
+button:hover {
+    background-color: #33c9f2;
+}
+/* Responsive Styling */
+@media (min-width: 768px) {
+    .left-section, .Right-Section {
+        width: 35%; /* Adjust left and right sections for larger screens */
+        text-align: left;
+    }
+    .Resume-Container {
+        flex-wrap: nowrap; /* Prevent wrapping on larger screens */
+    }
+    .Right-Section {
+        width: 65%; /* Right section takes more space */
+    }
+}
